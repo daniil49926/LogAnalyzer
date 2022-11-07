@@ -9,10 +9,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: action/checkout@v2
+      - uses: action/checkout@v3
       - name: Install python
-        uses: action/setup-python@v2
+        uses: action/setup-python@v3
         with:
           python-version: 3.11
       - name: Install lib
