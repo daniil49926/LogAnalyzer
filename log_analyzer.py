@@ -1,12 +1,11 @@
+import argparse
+import fnmatch
+import gzip
 import json
 import logging
 import os
-import fnmatch
-import gzip
-import argparse
-from typing import List, Dict, Tuple
 from string import Template
-
+from typing import Dict, List, Tuple
 
 config = {"REPORT_SIZE": 1000, "REPORT_DIR": "./reports", "LOG_DIR": "./log"}
 
